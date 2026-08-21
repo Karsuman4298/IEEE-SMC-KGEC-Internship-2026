@@ -2,8 +2,9 @@
 
 This repository contains the current EMCAD-based polyp segmentation pipeline used in this workspace. The main entry points are:
 
-- `train_polyp.py` for weak/scribble supervision
+- `train_polyp_bp.py` for bounded polygon supervision
 - `train_polyp_FS.py` for a full-supervision baseline
+-  `train_polyp_hup.py` for a HUP annotation weak supervision
 - `test_polyp.py` for evaluation and export of metrics
 
 ## Architecture
