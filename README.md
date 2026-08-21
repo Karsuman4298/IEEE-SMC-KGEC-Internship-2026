@@ -277,9 +277,7 @@ Preserve the global+local supervision structure, but **automate hardness detecti
 
 ## 6. Summary
 
-The **Previous HUPAnno** established the correct intuition: *put strong supervision where the model needs it most*. However, its theoretical purity (pure Dice, human oracles, fixed thresholds) made it fragile in practice.
-
-The **Improved HUPAnno** keeps the exact same information-theoretic goal but replaces every fragile component with a stable, differentiable, and reproducible alternative. The result is a weakly-supervised system that closes most of the gap to fully-supervised performance at ~35–45% of the dense annotation cost.
+The **HUPAnno** keeps the exact same information-theoretic goal but replaces every fragile component with a stable, differentiable, and reproducible alternative. The result is a weakly-supervised system that closes most of the gap to fully-supervised performance at ~35–45% of the dense annotation cost.
 ```
 
 ---
