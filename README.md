@@ -27,7 +27,7 @@ This repository contains the current EMCAD-based polyp segmentation pipeline use
 
 The updated code currently includes:
 
-- weak-supervision training in `train_polyp.py` with multi-scale loss terms and checkpoint logging;
+- weak-supervision HUPannotation training in `train_polyp_hup.py` with multi-scale loss terms and checkpoint logging;
 - a full-supervision baseline in `train_polyp_FS.py` for comparison;
 - evaluation in `test_polyp.py` that writes per-image metrics and spreadsheet summaries;
 - corrected loader imports in `utils/dataloader.py` and `utils/dataloader_polyp.py` so the runtime resolves the weak-mask utility path properly.
