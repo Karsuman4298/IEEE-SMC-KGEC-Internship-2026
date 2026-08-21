@@ -71,10 +71,10 @@ Put the PVTv2 checkpoint files in `./pretrained_pth/pvt/` before running an enco
 
 ## Training
 
-### Weakly supervised run
+### Weakly supervised HUPannotation run
 
 ```bash
-python train_polyp.py \
+python train_polyp_hup.py \
   --encoder pvt_v2_b2 \
   --pretrained_dir ./pretrained_pth/pvt/ \
   --train_path ./data/polyp/target/ClinicDB/train/ \
@@ -101,8 +101,6 @@ python test_polyp.py \
   --encoder pvt_v2_b2 \
   --dataset_name ClinicDB
 ```
-Here is the complete markdown document. You can save it as **`HUPAnno_Evolution.md`** in your repo.
-
 ---
 
 ```markdown
@@ -111,11 +109,11 @@ Here is the complete markdown document. You can save it as **`HUPAnno_Evolution.
 
 ## 1. Overview
 
-HUPAnno (Hardness-Guided Uncertainty Polygon Annotation) is a weakly-supervised annotation strategy that combines **global coarse polygon rings** (cheap, fast) with **Local Refinement Patches (LRPs)** at hard boundary segments (expensive but targeted). 
+HUPAnno (Hierarical Uncertinity Polygon Annotation) is a weakly-supervised annotation strategy that combines **global coarse polygon rings** (cheap, fast) with **Local Refinement Patches (LRPs)** at hard boundary segments (expensive but targeted). 
 
 This document records two versions:
 
-- **Previous HUPAnno** — the original theoretical design documented in `annotation_ideas_detailed.md`.
+- **Previous HUPAnno** — the original theoretical design `.
 - **Improved HUPAnno** — the current implementation that actually trains stably and achieves strong results (Dice ~0.90, HD95 ~13 px on Kvasir-SEG).
 
 ---
