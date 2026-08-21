@@ -283,5 +283,3 @@ The **Improved HUPAnno** keeps the exact same information-theoretic goal but rep
 ```
 
 ---
-
-Save that file and commit it. It gives you a clean paper-ready narrative: *"We started with this theoretical framework, identified these specific failure modes, and engineered these specific fixes."* That is a much stronger story than just presenting the final code alone.
